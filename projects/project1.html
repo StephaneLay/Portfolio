@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BubbleDrop Project</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Project Title -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../resume.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+        <h1>BubbleDrop</h1>
+    </header>
+
+    <!-- Project Images with Captions -->
+    <section id="project-gallery" class="gallery-section">
+        <div class="gallery">
+            <figure>
+                <img src="../images/bubblelevelselect.JPG" alt="Level Select">
+                <figcaption>Level select screen</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/bubble2.png" alt="Image 2">
+                <figcaption>In this bubble shooter game, you can eliminate bubbles by shooting a bubble of the same color onto another.</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/bubble3.png" alt="Image 3">
+                <figcaption>The objective is to eliminate all the bubbles using the fewest shots possible.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Project Explanation -->
+    <section id="project-details" class="section">
+        <h2>BubbleDrop</h2>
+        <p>We worked on this game for 6 months using the Godot Engine. I was involved in all aspects of development except the art. The most interesting work I did on this project includes:</p>
+        <ol>
+            <li>The grid system I designed that keeps track of each bubble in its coordinates and can process any desired effect on the structure upon collision.</li>
+            <li>The A* pathfinding algorithm to drop bubbles that are no longer linked to the central node, then used by the scoring system , fully customizable with a mathematical expression.</li>
+        </ol>
+        <p>This game will soon be available on Android. In the meantime, here's the French <a target="_blank" href = "https://drive.google.com/drive/folders/1iurzyVQ6tKxpfS7hgNmMUbrv88H0NeKL?usp=sharings">beta test</a> if you like to give it a try</p>
+    </section>
+
+    <section id="project-gallery" class="gallery-section">
+        <div class="gallery">
+            <figure>
+                <img src="../images/plugin1.JPG" alt="Plugin">
+                <figcaption>Overview of my plugin </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/pluginsave.JPG" alt="Image 2">
+                <figcaption>The save section of my plugin</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/pluginloadmanage.JPG" alt="Image 3">
+                <figcaption>The loading and manage data section</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Project Explanation -->
+    <section id="project-details" class="section">
+        <h2>Level Design Plugin</h2>
+        <p>This plugin I designed aims to simplify level design in every aspect. First, I created three custom docks on the right side of the interface,
+             which are generated when using the TileMap node in Godot, allowing users to efficiently paint level tiles.<br>
+        <p>When a new level is created or an existing level is loaded, the save level section will require a level name, various threshold values used by the game's reward system, and a maximum number of attempts. The plugin will then calculate the scores for this level, 
+                extract all the coordinates from the tilemap corresponding to the appropriate colors, and efficiently save all this data in an optimized format.</p>
+        <p>The load level and manage data sections allow users to load, remove, or rename existing levels, each featuring an integrated custom search tool for easy navigation.</p>
+    </section>
+    
+
+    
+    
+</body>
+</html>
