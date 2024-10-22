@@ -167,6 +167,21 @@ nav ul li a:hover {
     text-decoration: underline; /* Underline text on hover */
 }
 
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF; /* Change this color as needed */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s;
+}
+
+.project-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
 /* Project Gallery Section */
 /* Project Gallery Section */
 .gallery-section {
